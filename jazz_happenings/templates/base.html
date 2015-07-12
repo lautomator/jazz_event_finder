@@ -1,0 +1,23 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css"
+        href="{% static 'styles.css' %}" />
+
+    <title >{% block title %}test{% endblock %}</title>
+</head>
+
+<body>
+    <h1>This is a test page</h1>
+    <!-- page begins -->
+    <div id="page">
+
+        {% block page %}
+        <!-- content -->
+        {% endblock %}
+
+    </div><!-- page ends -->
+</body>
+</html>
